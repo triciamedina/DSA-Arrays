@@ -8,9 +8,9 @@ function main(){
     let arr = new Array();
 
     // Add an item to the array
-    arr.push("tauhida")
+    "😂tauhida".split('').map(string => string.codePointAt(0)).forEach(char => arr.push(char))
 
-    console.log(arr.get(0));
+    console.log(String.fromCodePoint(arr.get(0)));
 }
 
 console.log(main())
