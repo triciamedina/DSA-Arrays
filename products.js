@@ -4,19 +4,19 @@
 // Output:[108, 36, 12, 27]
 
 function findProducts(numArray) {
-    let totalProduct = 1;
-    let products = [];
-  
-    for (let i = 0; i < numArray.length; i++) {
-      totalProduct *= numArray[i];
-    }
-  
-    for (let j = 0; j < numArray.length; j++) {
-      const product = Math.floor(totalProduct / numArray[j]);
-      products.push(product);
-    }
-  
-    return products;
+  let totalProduct = 1;
+  let products = [];
+
+  for (let i = 0; i < numArray.length; i++) {
+    totalProduct *= numArray[i];
+  }
+
+  for (let j = 0; j < numArray.length; j++) {
+    const product = Math.floor(totalProduct / numArray[j]);
+    products.push(product);
+  }
+
+  return products;
 }
   
 findProducts([1, 3, 9, 4]);
